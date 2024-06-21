@@ -42,14 +42,14 @@ python main.py --access_token YOUR_ACCESS_TOKEN --domain DOMAIN
 
 ## What You Get
 
-You will get a JSON file containing all the post information. The most important properties are:
+You will get a JSON file containing [all the post information](https://dev.vk.com/ru/reference/objects/post). The most important properties are:
 - `"text"`: The content of the post.
 - `"date"`: The timestamp of the post.
 - `"attachments"`: An array containing attachments such as photos, etc.
 
 Parsing all this data is up to you, depending on what you want to extract. In my case, I mostly look for text and date information, getting that is trivial, but you might need more information.
 
-You can convert this JSON file to Excel using [this tool](https://www.convertcsv.com/json-to-csv.htm). Keep in mind, that it would not look well for posts with attachements. It's better to parse them properly first.
+You can convert this JSON file to Excel using [this tool](https://www.convertcsv.com/json-to-csv.htm). Keep in mind, that it would not look well for posts with attachements. It's better to [parse them properly first](https://dev.vk.com/ru/reference/objects/attachments-wall).
 
 To work with `"date"` timestamps, check [this tool](https://www.epochconverter.com/).
 
